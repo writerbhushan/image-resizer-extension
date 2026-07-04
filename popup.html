@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Image Resizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Image Resizer</h1>
+
+    <!-- SOURCE -->
+    <section class="card">
+      <h2>1) Source files</h2>
+      <input id="fileInput" type="file" multiple accept="image/*">
+    </section>
+
+    <!-- PRINT SIZE -->
+    <section class="card">
+      <h2>2) Print size (required)</h2>
+
+      <label>Width (in)
+        <input id="widthIn" type="number">
+      </label>
+
+      <label>Height (in)
+        <input id="heightIn" type="number">
+      </label>
+
+      <label>DPI
+        <input id="dpi" type="number" value="160">
+      </label>
+
+      <label>
+        <input type="checkbox" id="keepAR" checked>
+        Keep aspect ratio
+      </label>
+
+      <label>
+        <input type="checkbox" id="dpiOnly">
+        Only change DPI
+      </label>
+    </section>
+
+    <!-- OUTPUT -->
+    <section class="card">
+      <h2>3) Output</h2>
+
+      <label>Format
+        <select id="format">
+          <option value="image/jpeg">JPEG</option>
+          <option value="image/png">PNG</option>
+          <option value="image/webp">WEBP</option>
+        </select>
+      </label>
+
+      <label>Quality
+        <input id="quality" type="number" value="0.9" step="0.1">
+      </label>
+    </section>
+
+    <!-- ZIP -->
+    <section class="card">
+      <h2>4) Saving</h2>
+
+      <label>
+        <input type="checkbox" id="zipAll">
+        Zip all images
+      </label>
+
+      <label>Zip name
+        <input id="zipName" value="processed_images.zip">
+      </label>
+
+      <p class="hint">
+        Tip: Turn OFF "Ask where to save each file" in
+        <a href="#" id="openDownloadsSettings">Chrome Downloads settings</a>
+      </p>
+    </section>
+
+    <!-- ACTION -->
+    <section class="card">
+      <button id="processBtn">Process Images</button>
+      <button id="clearBtn">Clear</button>
+
+      <p id="status">Ready</p>
+    </section>
+
+  </main>
+
+  <script src="fflate.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Image Resizer & DPI Tool",
+  "version": "1.0",
+  "description": "Resize images using print size (inches × DPI), batch process, and download or zip results.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["downloads", "tabs"]
+}
