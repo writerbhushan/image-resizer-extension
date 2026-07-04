@@ -6,11 +6,17 @@ I built this tool independently to eliminate the tedious manual editing steps us
 
 ### Features
 🚀 Batch process multiple images at once.
+
 📏 Resize images using print dimensions (inches × DPI).
+
 🖼️ Convert images to JPEG, PNG, or WebP with adjustable quality.
+
 📦 Export processed images individually or as a single ZIP archive.
+
 🏷️ Automatically prefixes output filenames with processed_.
+
 💾 Supports silent downloads and automatic overwriting of existing files (when Chrome download settings are configured accordingly).
+
 🔒 All image processing is performed locally in the browser—no files are uploaded to any server.
 
 ### Installation
